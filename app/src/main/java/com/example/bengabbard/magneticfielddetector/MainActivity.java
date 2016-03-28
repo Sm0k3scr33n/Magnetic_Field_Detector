@@ -38,7 +38,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         // Do something with this sensor data.
         Log.i("Info", "  "+ DetectorValue+ " μT Microteslas\t");
 
-        TextView textViewpressure = (TextView) findViewById(R.id.textViewpressure);
+        TextView textViewpressure = (TextView) findViewById(R.id.textViewinfo);
         if( DetectorValue <20) {textViewpressure.setText("No Magnetic Field present:     "+DetectorValue+" µT (Microteslas"   );}
         if( DetectorValue >=35){textViewpressure.setText("Magnetic Field May Be present: "+DetectorValue+" µT (Microteslas"    );}
         if( DetectorValue >40){textViewpressure.setText("Magnetic Field IS present:     "+DetectorValue+" µT (Microteslas)"    );}
